@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health and Fitness Tracker - Signup</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form-section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: calc(100% - 22px);
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .save-next-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .save-next-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Health and Fitness Tracker - Signup</h1>
+    <form action="page1.php" method="post">
+        <div class="form-section">
+            <fieldset>
+                <legend>Personal Details:</legend>
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name">
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </fieldset>
+        </div>
+
+        <div class="form-section">
+            <fieldset>
+                <legend>Health and Fitness Details:</legend>
+                <label for="height">Height (cm):</label>
+                <input type="text" id="height" name="height">
+
+                <label for="weight">Weight (kg):</label>
+                <input type="text" id="weight" name="weight">
+
+                <label for="goal">Fitness Goal:</label>
+                <select id="goal" name="goal">
+                    <option value="weight_loss">Weight Loss</option>
+                    <option value="muscle_gain">Muscle Gain</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+            </fieldset>
+        </div>
+
+        <div class="form-section">
+            <fieldset>
+                <legend>Contact Details:</legend>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mobile">Mobile Number:</label>
+                <input type="text" id="mobile" name="mobile">
+            </fieldset>
+        </div>
+
+        <div class="form-section clearfix">
+            <input type="submit" class="save-next-btn" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
